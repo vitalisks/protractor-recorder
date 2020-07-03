@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <script type="text/javascript" src="panel.js"></script>
-    <script type="text/javascript" src="prism.js" data-manual></script>
-    
-    <link href="prism.css" rel="stylesheet" />
+    <script type="text/javascript" src="panel.js"></script>        
+    <link rel="stylesheet"
+      href="hljs.min.css">
+    <script src="highlight.min.js"></script>    
     
     <style>
         html {
@@ -47,24 +47,28 @@
             min-height: 24px;
             padding-top: 8px;
         }
+        button{
+            border: 1px solid gray;
+            background: lightgray;
+            min-height: 1.2rem;
+        }
     </style>
 </head>
 
 <body>
-    <h1>
+    <h3>
         <img src="icon48.png" style="vertical-align: middle;"/>
         Protractor Recorder
-    </h1>
+    </h3>
 
     <header>
         <div style="flex: 1 0 auto;">
             Record Protractor tests by interacting with the page via mouse or touch.
         </div>
-        <input type="checkbox" id="nosync"/>
-        <label for="nosync">Disable automatic synchronization</label>
+        <input type="checkbox" name="disableRecording">Disable recording
     </header>
 
-    <pre><code class="language-javascript" contenteditable="true" spellcheck="false"></code></pre>
+    <pre><code class="javascript" contenteditable="true" spellcheck="false"></code></pre>
 
     <footer>
         <button id="copy" style="display: none;">Copy to Clipboard</button>
@@ -72,7 +76,8 @@
         <button id="clear" style="display: none;">Clear</button>
         &nbsp;&nbsp;&nbsp;
         <div id="message" style="flex: 1 1 0; font-style: italic; text-align: right;"></div>
-    </footer>
+    </footer>        
+    
 </body>
 
 </html>

@@ -1,0 +1,21 @@
+{
+   "description": "Records Protractor E2E test scripts",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },   
+   "content_scripts": [
+      {
+          "matches": [
+              "<all_urls>"
+          ],
+          "js": ["inject.js"]
+      }
+   ],
+   "manifest_version": 2,
+   "name": "Protractor Recorder",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.0"
+}
