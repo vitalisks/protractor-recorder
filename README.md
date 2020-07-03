@@ -5,7 +5,7 @@ Chrome extension to record Protractor E2E test scripts
 1. Download ZIP and unzip to folder on your local machine
 2. Start Chrome browser and navigate to *chrome://extensions*
 3. Enable `Developer mode`
-4. Click on **Load unpacked extension** and select location of unzipped folder
+4. Click on **Load unpacked extension** and select location of the folder, where `manifest.json` is located
 5. Enable the Protractor Recorder extension
  
 ## How to Use
